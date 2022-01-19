@@ -3,6 +3,8 @@ package it.giovanna.spring.service;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import it.giovanna.spring.aspect.Loggable;
+
 @Service
 public class GreetingService {
 
@@ -13,6 +15,7 @@ public class GreetingService {
         super();
     }
 
+    @Loggable
     public String getGreeting(String name){
         return greeting + " " + name;
     }
