@@ -9,7 +9,7 @@ public class OutputService {
     private final GreetingService greetingService;
     private final TimeService timeService;
     
-    @Value("${app.greeting}")
+    @Value("${app.name}")
     private String name;
     
     public OutputService(GreetingService greetingService, TimeService timeService){
